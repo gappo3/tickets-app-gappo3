@@ -185,6 +185,7 @@ const TableTickets: React.FC = () => {
                     pagination={tableParams.pagination}
                     loading={loading}
                     onChange={handleTableChange}
+                    scroll={{ x: 'max-content' }}
                     onRow={(record) => ({
                         onClick: () => router.push(`/tickets/${record.id}`)
                     })}

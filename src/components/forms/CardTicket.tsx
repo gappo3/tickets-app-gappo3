@@ -120,7 +120,7 @@ const CardTicket: React.FC<{ ticketId?: number }> = ({ ticketId = 0 }) => {
                     <Text strong style={{ marginRight: 8 }}>Status:</Text>
                     <Select
                         defaultValue={ticketData?.status || ''}
-                        style={{ width: 120 }}
+                        style={{ width: 180 }}
                         onChange={handleSelectChange}
                         options={[
                             { value: 'OPEN', label: 'OPEN' },
